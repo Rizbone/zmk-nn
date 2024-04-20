@@ -581,6 +581,21 @@
 				, <&macro_release  &kp LGUI>
                 ; 
     	};
+		
+
+		// Clipboard Win
+
+		wClip: wClip {
+            label = "wClip";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LGUI>
+				, <&kp V>
+				, <&sleep 250>
+				, <&macro_release  &kp LGUI>
+                ; 
+    	};
 
 
 
@@ -2433,7 +2448,7 @@
 				&kp LC(C)			
 				&kp LC(X)
 
-				&kp LC(LA(H))	
+				&wClip	
 				&kp LC(V)
 				&kp LC(LA(I))	
 				&kp LC(LA(U))	
