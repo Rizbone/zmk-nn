@@ -532,6 +532,24 @@
     	};
 
 
+		// Window
+
+		wWinLeft: wWinLeft {
+            label = "wWinLeft";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LGUI>
+				, <&kp LEFT>
+				, <&sleep 250>
+				, <&macro_release  &kp LGUI>
+                ; 
+    	};
+
+
+
+
+
 		// Reset
 
 		wReset: wReset {
