@@ -887,7 +887,7 @@
 				&kp LC(LA(L))			
 				&kp PG_UP
 				&kp LC(LA(R))			
-				&kp LC(PAGE_UP)			
+				&kp LC(UP)			
 				&kp BACKSPACE					// -
 
 				// ----------------------------------------
@@ -903,7 +903,7 @@
 				&kp LS(LC(TAB))				 
 				&kp PG_DN
 				&kp LC(TAB)				 	
-				&kp LC(PAGE_DOWN)		
+				&kp LC(DOWN)		
 				&kp ENTER					
 				
 				// ----------------------------------------
