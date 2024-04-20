@@ -2065,18 +2065,18 @@
 
 				// ----------------------------------------
 
-				&kp LC(LA(LS(B)))
+				&kp LA(LEFT)
 				&kp LC(HOME)				// @Home Sprung
 				&kp LS(TAB)
 				&kp UP						// @Up
 				&kp TAB
-				&kp LC(LA(LS(G)))
+				&kp LA(RIGHT)
 
 				&kp LC(LA(C))	
 				&kp LC(LA(L))			
 				&kp PG_UP
 				&kp LC(LA(R))		 	 
-				&kp LC(PAGE_UP)
+				&kp LC(UP)
 				&kp BSPC					
 
 				// ----------------------------------------
@@ -2092,7 +2092,7 @@
 				&kp LS(LC(TAB))			 	// 
 				&kp PG_DN
 				&kp LC(TAB)				 	// 
-				&kp LC(PAGE_DOWN)
+				&kp LC(DOWN)
 				&kp ENTER					// -
 				
 				// ----------------------------------------
