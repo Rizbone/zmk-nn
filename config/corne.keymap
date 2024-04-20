@@ -2262,7 +2262,7 @@
 				&kp LG(D)				// Hide all
 				&kp LG(PG_UP)
 				&none
-				&none
+				&wWinUp
 				&none
 				&none
 
@@ -2277,9 +2277,9 @@
 
 				&kp LG(TAB)				// #OPEN
 				&kp LG(PG_DN)
-				&none
-				&none
-				&none
+				&wWinLeft
+				&wWinDown
+				&wWinRight
 				&none
 
 				&none
