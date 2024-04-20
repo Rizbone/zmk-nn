@@ -546,6 +546,42 @@
                 ; 
     	};
 
+		wWinRight: wWinRight {
+            label = "wWinRight";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LGUI>
+				, <&kp RIGHT>
+				, <&sleep 250>
+				, <&macro_release  &kp LGUI>
+                ; 
+    	};
+
+		wWinUp: wWinUp {
+            label = "wWinUp";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LGUI>
+				, <&kp UP>
+				, <&sleep 250>
+				, <&macro_release  &kp LGUI>
+                ; 
+    	};
+
+		wWinDown: wWinDown {
+            label = "wWinDown";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LGUI>
+				, <&kp DOWN>
+				, <&sleep 250>
+				, <&macro_release  &kp LGUI>
+                ; 
+    	};
+
 
 
 
