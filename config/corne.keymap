@@ -592,7 +592,7 @@
             bindings
                 = <&macro_press &kp LGUI>
 				, <&macro_wait_time 50>
-				= <&kp LG(V)>
+				, <&kp LG(V)>
 				, <&macro_wait_time 250>
 				, <&macro_release  &kp LGUI>
                 ; 
