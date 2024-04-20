@@ -541,7 +541,7 @@
             bindings
                 = <&macro_press &kp LGUI>
 				, <&kp LEFT>
-				, <&wait 250>
+				, <&macro_wait_time 250>
 				, <&macro_release  &kp LGUI>
                 ; 
     	};
@@ -553,7 +553,7 @@
             bindings
                 = <&macro_press &kp LGUI>
 				, <&kp RIGHT>
-				, <&wait 250>
+				, <&macro_wait_time 250>
 				, <&macro_release  &kp LGUI>
                 ; 
     	};
@@ -565,7 +565,7 @@
             bindings
                 = <&macro_press &kp LGUI>
 				, <&kp UP>
-				, <&wait 250>
+				, <&macro_wait_time 250>
 				, <&macro_release  &kp LGUI>
                 ; 
     	};
@@ -577,7 +577,7 @@
             bindings
                 = <&macro_press &kp LGUI>
 				, <&kp DOWN>
-				, <&wait 250>
+				, <&macro_wait_time 250>
 				, <&macro_release  &kp LGUI>
                 ; 
     	};
@@ -592,7 +592,7 @@
             bindings
                 = <&macro_press &kp LGUI>
 				, <&kp V>
-				, <&wait 250>
+				, <&macro_wait_time 250>
 				, <&macro_release  &kp LGUI>
                 ; 
     	};
