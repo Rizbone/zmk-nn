@@ -540,7 +540,7 @@
             #binding-cells = <0>;
             bindings
                 = <&macro_press &kp LGUI>
-				, <&kp LG(LEFT)>
+				, <&macro_tap &kp LEFT>
 				, <&macro_wait_time 250>
 				, <&macro_release  &kp LGUI>
                 ; 
@@ -552,7 +552,7 @@
             #binding-cells = <0>;
             bindings
                 = <&macro_press &kp LGUI>
-				, <&kp LG(RIGHT)>
+				, <&macro_tap &kp RIGHT>
 				, <&macro_wait_time 250>
 				, <&macro_release  &kp LGUI>
                 ; 
@@ -564,7 +564,7 @@
             #binding-cells = <0>;
             bindings
                 = <&macro_press &kp LGUI>
-				, <&kp LG(UP)>
+				, <&macro_tap &kp UP>
 				, <&macro_wait_time 250>
 				, <&macro_release  &kp LGUI>
                 ; 
@@ -576,7 +576,7 @@
             #binding-cells = <0>;
             bindings
                 = <&macro_press &kp LGUI>
-				, <&kp LG(DOWN)>
+				, <&macro_tap &kp DOWN>
 				, <&macro_wait_time 250>
 				, <&macro_release  &kp LGUI>
                 ; 
