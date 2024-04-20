@@ -591,7 +591,8 @@
             #binding-cells = <0>;
             bindings
                 = <&macro_press &kp LGUI>
-				, <&kp V>
+				= <&macro_press &kp V>
+				= <&macro_release &kp V>
 				, <&macro_wait_time 250>
 				, <&macro_release  &kp LGUI>
                 ; 
