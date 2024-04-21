@@ -1475,7 +1475,7 @@
 
 				// ----------------------------------------
 
-				&kp LSHIFT				//
+				&kp LSHFT				//
 				&kp LS(N7)				// /
 				&kp LS(LA(N7))			// backlslash
 				&kp LS(N5)				// %
@@ -1621,7 +1621,7 @@
 
 				// ----------------------------------------
 
-				&kp LSHIFT
+				&kp LSHFT
 				&kp LG(F)					//
 				&kp LG(V)					//
 				&kp LG(MINUS)				//
@@ -1633,7 +1633,7 @@
 				&kp LG(LEFT_BRACKET)		//
 				&kp LG(SINGLE_QUOTE)		//
 				&kp LG(K) 					//
-				&kp LSHIFT
+				&kp LSHFT
 
 				// ----------------------------------------
 		
