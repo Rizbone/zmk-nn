@@ -1074,9 +1074,9 @@
 
 				&kp LG(LA(H))				// #OPEN
 				&none						//
-				&kp LG(LA(MINUS))			// Reset
+				&kp LG(LA(KP_MINUS))		// Reset
 				&kp LG(LA(UP))				// 
-				&kp LG(LA(PLUS))			// Vollbild
+				&kp LG(LA(KP_PLUS))			// Vollbild
 				&kp LG(LA(ENTER))			// 
 
 				&kp LG(LA(F6)) 					
@@ -1160,7 +1160,7 @@
 				&bt BT_SEL 1
 				&bt BT_SEL 2
 				&none
-				&none
+				&sys_reset
 				
 
 				// ----------------------------------------
@@ -1263,8 +1263,8 @@
 
 				&kp LG(P)	
 				&kp LC(LA(F))	
-				&kp LG(PLUS)	
-				&kp LG(MINUS)	
+				&kp LG(KP_PLUS)	
+				&kp LG(KP_MINUS)	
 				&kp LG(F)	
 				&kp LG(T)
 				
@@ -2350,7 +2350,7 @@
 				&bt BT_SEL 1
 				&bt BT_SEL 2
 				&none
-				&none
+				&sys_reset
 
 				// ----------------------------------------
 		
