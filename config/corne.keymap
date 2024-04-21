@@ -1136,6 +1136,83 @@
 
 
 
+		// -----------------------------------------------------|
+		// Layer 17 - mPNAV =	Programm NAV					|
+		// -----------------------------------------------------|
+
+		mac_pnav
+		{
+			label = "MAC";
+
+			bindings = <
+
+				// ----------------------------------------
+
+				&kp KC_ESC
+				&kp PG_UP					
+				&kp LS(TAB)
+				&kp UP						
+				&kp TAB
+				&kp BACKSPACE				 
+
+				&bt BT_CLR
+				&bt BT_SEL 0
+				&bt BT_SEL 1
+				&bt BT_SEL 2
+				&none
+				&none
+				
+
+				// ----------------------------------------
+		
+				&none						//
+				&kp PG_DN						//
+				&kp LEFT
+				&kp DOWN
+				&kp RIGHT
+				&kp ENTER
+
+				&none						//
+				&kp LCTL					//
+				&kp LGUI					//
+				&kp LALT					//
+				&kp LSHFT					//
+				&none						//
+
+				// ----------------------------------------
+
+				&none						//
+				&kp HOME
+				&kp DELETE
+				&kp INSERT
+				&kp END
+				&none						// 
+
+				&none						//
+				&none						//
+				&none						// 
+				&none						//
+				&none						// 
+				&none						//
+
+				// ----------------------------------------
+		
+				&none						//
+				&none
+				&none						// 
+				&none						//
+				&sl mNAV
+				&none						// 
+
+				// ----------------------------------------
+			>;
+		};
+					
+
+
+
+
+
 
 		
 	};
