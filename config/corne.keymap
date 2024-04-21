@@ -2431,8 +2431,8 @@
 
 				&kp LG(LS(F8))
 				&kp LC(A)
-				&kp LC(LA(E))	
-				&kp LC(LA(N))	
+				&kp LG(DEL)	
+				&kp LG(INSERT)	
 				&kp LC(C)			
 				&kp LC(X)
 
@@ -2504,8 +2504,8 @@
 
 				&kp LG(LS(F11))
 				&kp LC(LS(A))
-				&kp LC(LA(LS(E)))	
-				&kp LC(LA(LS(N)))	
+				&kp LG(LS(DEL))	
+				&kp LG(LS(INSERT))
 				&kp LC(LS(C))			
 				&kp LC(LS(X))
 
