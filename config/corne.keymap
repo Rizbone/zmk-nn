@@ -1077,13 +1077,13 @@
 				&none						
 				&kp LG(LA(UP))				// 
 				&none						
-				&none						// 
+				&kp LG(LA(ENTER))			// 
 
-				&none						//
-				&none						//
-				&none						// 
-				&none						//
-				&none						// 
+				&kp LG(LA(F6)) 					
+				&kp LG(LA(F7)) 					
+				&kp LG(LA(F8)) 					
+				&kp LG(LA(F9)) 					
+				&kp LG(LA(F10)) 
 				&kp LG(LA(ESC))			// #OPEN
 		
 				// ----------------------------------------
@@ -1095,11 +1095,11 @@
 				&kp LG(LA(RIGHT))			// 
 				&kp LG(LA(LS(RIGHT)))			
 
-				&none						//
-				&none						//
-				&none						// 
-				&none						//
-				&none						// 
+				&kp LA(LG(LC(F1))) 					
+				&kp LA(LG(LC(F2))) 					
+				&kp LA(LG(LC(F3))) 					
+				&kp LA(LG(LC(F4))) 					
+				&kp LA(LG(LC(F5))) 	
 				&kp LG(LS(F4))
 
 				// ----------------------------------------
@@ -1111,11 +1111,11 @@
 				&none						//
 				&none						// 
 
-				&none						//
-				&none						//
-				&none						// 
-				&none						//
-				&none						// 
+				&kp LA(LG(LC(F6))) 					
+				&kp LA(LG(LC(F7))) 					
+				&kp LA(LG(LC(F8))) 					
+				&kp LA(LG(LC(F9))) 					
+				&kp LA(LG(LC(F10))) 	
 				&kp LG(LS(F6))
 		
 				// ----------------------------------------
@@ -1148,19 +1148,20 @@
 
 				// ----------------------------------------
 
-				&kp LG(LA(ENTER))			// 
-				&kp PG_UP					//
+				&kp KC_ESC
+				&kp PG_UP					
 				&kp LS(TAB)
-				&kp UP						// 
+				&kp UP						
 				&kp TAB
-				&kp HOME						// 
+				&kp BACKSPACE				 
 
 				&bt BT_CLR
 				&bt BT_SEL 0
 				&bt BT_SEL 1
 				&bt BT_SEL 2
-				&bt BT_SEL 3
-				&kp BACKSPACE				//
+				&bootloader
+				&sys_reset
+				
 
 				// ----------------------------------------
 		
@@ -1169,22 +1170,22 @@
 				&kp LEFT
 				&kp DOWN
 				&kp RIGHT
-				&kp END
+				&kp ENTER
 
 				&none						//
 				&kp LCTL					//
 				&kp LGUI					//
 				&kp LALT					//
-				&none						// 
+				&kp LSHFT					//
 				&none						//
 
 				// ----------------------------------------
 
 				&none						//
-				&none						//
-				&none						// 
-				&none						//
-				&none						// 
+				&kp HOME
+				&kp DELETE
+				&kp INSERT
+				&kp END
 				&none						// 
 
 				&none						//
@@ -1367,7 +1368,7 @@
 
 				// ----------------------------------------
 
-				&none
+				&kp LALT
 				&kp F1
 				&kp F2
 				&kp F3
@@ -1379,11 +1380,11 @@
 				&kp F8
 				&kp F9
 				&kp F10
-				&none
+				&kp LALT
 
 				// ----------------------------------------
 		
-				&none
+				&kp LCTRL
 				&kp LG(N1)					// 11
 				&kp LG(N2)					// 12
 				&kp LG(N3)					// 13
@@ -1395,23 +1396,23 @@
 				&kp LG(N8)					// 18
 				&kp LG(N9)					// 19
 				&kp LG(N0)					// 20
-				&none
+				&kp LCTRL
 
 				// ----------------------------------------
 
-				&none
+				&kp LSHFT
 				&kp F11
 				&kp F12
 				&kp F13
 				&kp F14
 				&kp F15
 
-				&kp LC(LS(F6))
-				&kp LC(LS(F7))
-				&kp LC(LS(F8))
-				&kp LC(LS(F9))
-				&kp LC(LS(F11))
-				&none
+				&kp F16
+				&kp F17
+				&kp F18
+				&kp F19
+				&kp F20
+				&kp LSHFT
 
 				// ----------------------------------------
 		
@@ -1672,11 +1673,11 @@
 				&none
 				&none
 
-				&kp LG(LC(F1)) 					
-				&kp LG(LC(F2)) 					
-				&kp LG(LC(F3)) 					
-				&kp LG(LC(F4)) 					
-				&kp LG(LC(F5)) 
+				&kp LG(LA(F1)) 					
+				&kp LG(LA(F2)) 					
+				&kp LG(LA(F3)) 					
+				&kp LG(LA(F4)) 					
+				&kp LG(LA(F5)) 
 				&kp DEL				//
 
 				// ----------------------------------------
@@ -1688,11 +1689,11 @@
 				&kp C_PLAY						
 				&none
 
-				&kp LC(LA(LG(F1))) 					
-				&kp LC(LA(LG(F2))) 
-				&kp LC(LA(LG(F3))) 
-				&kp LC(LA(LG(F4))) 
-				&kp LC(LA(LG(F5))) 
+				&kp LG(LC(F1))
+				&kp LG(LC(F2))
+				&kp LG(LC(F3)) 					
+				&kp LG(LC(F4)) 					
+				&kp LG(LC(F5))	
 				&kp LC(ENTER)				// 
 
 				// ----------------------------------------
@@ -1704,11 +1705,11 @@
 				&none
 				&none
 
-				&kp LC(LA(LG(F6))) 					
-				&kp LC(LA(LG(F7))) 
-				&kp LC(LA(LG(F8))) 
-				&kp LC(LA(LG(F9))) 
-				&kp LC(LA(LG(F10))) 
+				&kp LG(LC(F6))
+				&kp LG(LC(F7))
+				&kp LG(LC(F8)) 					
+				&kp LG(LC(F9)) 					
+				&kp LG(LC(F10))	
 				&turnOnWin
 
 				// ----------------------------------------
@@ -1746,11 +1747,11 @@
 				&none
 				&none
 
-				&kp LG(LC(F6)) 					
-				&kp LG(LC(F7)) 					
-				&kp LG(LC(F8)) 					
-				&kp LG(LC(F9)) 					
-				&kp LG(LC(F10)) 
+				&kp LC(LS(F1)) 									
+				&kp LC(LS(F2)) 					
+				&kp LC(LS(F3)) 					
+				&kp LC(LS(F4)) 					
+				&kp LC(LS(F5)) 					
 				&kp DEL				//
 
 				// ----------------------------------------
@@ -1762,11 +1763,11 @@
 				&kp C_PLAY
 				&none
 
-				&kp LA(LG(F1)) 					
-				&kp LA(LG(F2)) 
-				&kp LA(LG(F3)) 
-				&kp LA(LG(F4)) 
-				&kp LA(LG(F5)) 
+				&kp LC(LS(F6)) 					
+				&kp LC(LS(F7)) 					
+				&kp LC(LS(F8)) 					
+				&kp LC(LS(F9)) 					
+				&kp LC(LS(F10)) 					
 				&kp LA(ENTER)				// 
 
 				// ----------------------------------------
@@ -1778,11 +1779,11 @@
 				&none
 				&none
 
-				&kp LA(LG(F6)) 					
-				&kp LA(LG(F7)) 
-				&kp LA(LG(F8)) 
-				&kp LA(LG(F9)) 
-				&kp LA(LG(F10)) 
+				&kp LC(LS(F11)) 					
+				&kp LC(LS(F12)) 					
+				&kp LC(LS(F13)) 					
+				&kp LC(LS(F14)) 					
+				&kp LC(LS(F15)) 
 				&turnOnWin
 
 				// ----------------------------------------
@@ -2264,32 +2265,32 @@
 
 				&kp LG(D)				// Hide all
 				&kp LG(PG_UP)
-				&none
+				&kp LG(LS(LEFT))
 				&wWinUp
-				&none
-				&none
+				&kp LG(LS(RIGHT))
+				&kp LC(LA(ENTER))			
 
-				&none
-				&none
-				&none
-				&none
-				&none
+				&kp LG(LA(F6)) 					
+				&kp LG(LA(F7)) 					
+				&kp LG(LA(F8)) 					
+				&kp LG(LA(F9)) 					
+				&kp LG(LA(F10)) 
 				&kp LC(LS(ESC))			// Task Manager
 		
 				// ----------------------------------------
 
-				&kp LG(TAB)				// #OPEN
+				&kp LG(LS(TAB))				
 				&kp LG(PG_DN)
 				&wWinLeft
 				&wWinDown
 				&wWinRight
 				&none
 
-				&none
-				&none
-				&none
-				&none
-				&none
+				&kp LA(LG(LC(F1))) 					
+				&kp LA(LG(LC(F2))) 					
+				&kp LA(LG(LC(F3))) 					
+				&kp LA(LG(LC(F4))) 					
+				&kp LA(LG(LC(F5))) 	
 				&kp LG(LS(F4))
 
 				// ----------------------------------------
@@ -2301,11 +2302,11 @@
 				&none
 				&none
 
-				&none
-				&none
-				&none
-				&none
-				&none
+				&kp LA(LG(LC(F6))) 					
+				&kp LA(LG(LC(F7))) 					
+				&kp LA(LG(LC(F8))) 					
+				&kp LA(LG(LC(F9))) 					
+				&kp LA(LG(LC(F10))) 	
 				&kp LG(LS(F6))
 		
 				// ----------------------------------------
@@ -2344,38 +2345,38 @@
 				&kp LS(TAB)
 				&kp UP						// 
 				&kp TAB
-				&kp HOME						// 
+				&kp BACKSPACE
 
 				&bt BT_CLR
 				&bt BT_SEL 0
 				&bt BT_SEL 1
 				&bt BT_SEL 2
-				&bt BT_SEL 3
-				&kp BACKSPACE				//
+				&bootloader
+				&sys_reset
 
 				// ----------------------------------------
 		
 				&none						//
-				&kp PG_DN						//
+				&kp PG_DN					//
 				&kp LEFT
 				&kp DOWN
 				&kp RIGHT
-				&kp END
+				&kp ENTER
 
 				&none						//
 				&kp LCTRL					//
 				&kp LALT					// 
 				&kp LGUI					//
-				&none						// 
+				&kp LSHFT					// 
 				&none						//
 
 				// ----------------------------------------
 
 				&none						//
-				&none						//
-				&none						// 
-				&none						//
-				&none						// 
+				&kp HOME
+				&kp DELETE
+				&kp INSERT
+				&kp END
 				&none						// 
 
 				&none						//
@@ -2560,7 +2561,7 @@
 
 				// ----------------------------------------
 
-				&none
+				&kp LALT
 				&kp F1
 				&kp F2
 				&kp F3
@@ -2572,11 +2573,11 @@
 				&kp F8
 				&kp F9
 				&kp F10
-				&none
+				&kp LALT
 
 				// ----------------------------------------
 		
-				&none
+				&kp LCTRL
 				&kp LC(N1)					// 11
 				&kp LC(N2)					// 12
 				&kp LC(N3)					// 13
@@ -2588,23 +2589,23 @@
 				&kp LC(N8)					// 18
 				&kp LC(N9)					// 19
 				&kp LC(N0)					// 20
-				&none
+				&kp LCTRL
 
 				// ----------------------------------------
 
-				&none
+				&kp LSHFT
 				&kp F11
 				&kp F12
 				&kp F13
 				&kp F14
 				&kp F15
 
-				&kp LC(LS(F6))
-				&kp LC(LS(F7))
-				&kp LC(LS(F8))
-				&kp LC(LS(F9))
-				&kp LC(LS(F11))
-				&none
+				&kp F16
+				&kp F17
+				&kp F18
+				&kp F19
+				&kp F20
+				&kp LSHFT
 
 				// ----------------------------------------
 		
@@ -2865,11 +2866,11 @@
 				&none
 				&none
 
-				&kp LG(LC(F1)) 					
-				&kp LG(LC(F2)) 					
-				&kp LG(LC(F3)) 					
-				&kp LG(LC(F4)) 					
-				&kp LG(LC(F5)) 						
+				&kp LG(LA(F1)) 					
+				&kp LG(LA(F2)) 					
+				&kp LG(LA(F3)) 					
+				&kp LG(LA(F4)) 					
+				&kp LG(LA(F5)) 						
 				&kp DEL				//
 
 				// ----------------------------------------
@@ -2881,11 +2882,11 @@
 				&kp C_PLAY	
 				&none
 
-				&kp LA(LG(LC(F1))) 					
-				&kp LA(LG(LC(F2))) 					
-				&kp LA(LG(LC(F3))) 					
-				&kp LA(LG(LC(F4))) 					
-				&kp LA(LG(LC(F5))) 					
+				&kp LG(LC(F1))
+				&kp LG(LC(F2))
+				&kp LG(LC(F3)) 					
+				&kp LG(LC(F4)) 					
+				&kp LG(LC(F5))				
 				&kp LC(ENTER)				// 
 
 				// ----------------------------------------
@@ -2897,11 +2898,11 @@
 				&none
 				&none
 
-				&kp LA(LG(LC(F6))) 					
-				&kp LA(LG(LC(F7))) 					
-				&kp LA(LG(LC(F8))) 					
-				&kp LA(LG(LC(F9))) 					
-				&kp LA(LG(LC(F10))) 					 					
+				&kp LG(LC(F6))
+				&kp LG(LC(F7))
+				&kp LG(LC(F8)) 					
+				&kp LG(LC(F9)) 					
+				&kp LG(LC(F10))
 				&turnOnWin
 
 				// ----------------------------------------
@@ -2937,9 +2938,9 @@
 				&none
 				&none
 
-				&kp LG(LC(F6)) 					
-				&kp LG(LC(F7)) 					
-				&kp LG(LC(F8)) 					
+				&none
+				&none
+				&none				
 				&kp LC(LA(DEL)) 					
 				&kp LG(L) 					
 				&kp DEL				//
@@ -2956,8 +2957,8 @@
 				&kp LA(LG(LC(U))) 					
 				&kp LS(LG(S))
 				&kp LG(E)
-				&kp LA(LG(F4)) 					
-				&kp LA(LG(F5)) 					
+				&none
+				&none
 				&kp LA(ENTER)				// 
 
 				// ----------------------------------------
@@ -2971,8 +2972,8 @@
 
 				&kp LC(F1)
 				&kp LA(E)
-				&kp LA(LG(F8)) 					
-				&kp LA(LG(F9)) 					
+				&none				
+				&none
 				&kp LG(A)					
 				&turnOnWin
 
