@@ -922,12 +922,12 @@
 
 				// ----------------------------------------
 
-				&kp LC(LA(LS(B)))		
+				&kp ESC
 				&kp LG(UP)					// @Home Sprung
 				&kp LS(TAB)
 				&kp UP						// @Up
 				&kp TAB
-				&kp LC(LA(LS(G)))			
+				&kp LC(LA(LS(C)))
 		
 				&kp LC(LA(C))
 				&kp LC(LA(L))			
@@ -959,9 +959,9 @@
 				&kp LA(LEFT)				// @Wort Sprung
 				&kp LA(RIGHT)				// @Wort Sprung
 				&kp LG(RIGHT)				// @End  
-				&kp LG(LA(LC(SPACE)))
+				&kp DELETE
 
-				&mFuncMarkLine	
+				&kp LG(LA(LC(SPACE)))
 				&kp LG(LS(LEFT))				// @Home 
 				&kp LA(LS(LEFT))				// @Wort Sprung
 				&kp LA(LS(RIGHT))				// @Wort Sprung
@@ -2110,12 +2110,12 @@
 
 				// ----------------------------------------
 
-				&kp LA(LEFT)
+				&kp ESC
 				&kp LC(HOME)				// @Home Sprung
 				&kp LS(TAB)
 				&kp UP						// @Up
 				&kp TAB
-				&kp LA(RIGHT)
+				&kp LC(LA(LS(C)))	
 
 				&kp LC(LA(C))	
 				&kp LC(LA(L))			
@@ -2147,9 +2147,9 @@
 				&kp LC(LEFT)				// @Wort Sprung
 				&kp LC(RIGHT)				// @Wort Sprung
 				&kp END
-				&wAltShot
+				&kp DEL
 
-				&wFuncMarkLine
+				&wAltShot
 				&kp LS(HOME)					// @Home 
 				&kp LS(LC(LEFT))				// @Wort Sprung
 				&kp LS(LC(RIGHT))				// @Wort Sprung
@@ -2449,7 +2449,7 @@
 				&kp LC(Y)
 				&kp LC(Z)
 				&kp LC(O)
-				&kp LC(LA(D))	
+				&kp LC(DELETE)	
 
 				&kp LC(P)	
 				&kp LC(LA(F))	
@@ -2522,7 +2522,7 @@
 				&kp LC(LS(Y))
 				&kp LC(LS(Z))
 				&kp LC(LS(O))
-				&kp LC(LA(LS(D)))	 
+				&kp LC(LS(DELETE))
 
 				&kp LC(LS(P))
 				&kp LC(LS(LA(F)))	
