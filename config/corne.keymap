@@ -945,7 +945,7 @@
 				&kp RIGHT 					// @Right
 				&kp LC(LA(G))			
 
-				&kp LG(LS(F10))		
+				&kp LC(LS(F10))		
 				&kp LS(LC(TAB))				 
 				&kp PG_DN
 				&kp LC(TAB)				 	
