@@ -1905,7 +1905,7 @@
 				&kp SPACE
 				&sl wFUNC
 				&sl wPRG
-				&sl wNAV
+				&mdResWin
 				&mdNrWin
 
 				// ----------------------------------------
@@ -1978,7 +1978,7 @@
 				&wSpaceReset 
 				&wFuncReset
 				&wPrgReset
-				&sl wNAV
+				&mdResWin
 				&none
 			>;		
 		};
@@ -2049,7 +2049,7 @@
 				&kp SPACE
 				&sl wFUNC
 				&sl wPRG
-				&sl wNAV
+				&mdResWin
 				&none
 			>;		
 		};
@@ -2121,7 +2121,7 @@
 				&wSpaceReset 
 				&wFuncReset
 				&wPrgReset
-				&wNavShift
+				&mdResWin
 				&mdNrWin
 
 				// ----------------------------------------		
@@ -2195,7 +2195,7 @@
 				&kp SPACE				
 				&sl wFUNC
 				&sl wPRG
-				&to wCHAR
+				&mdResWin
 				&mdNrWin
 
 				// ----------------------------------------							
@@ -2270,7 +2270,7 @@
 				&none
 				&none
 				&sl wSPRG					// deep						
-				&sl wNAV
+				&mdResWin
 				&none
 
 				// ----------------------------------------
@@ -2346,7 +2346,7 @@
 				&none						//
 				&none
 				&trans						// 
-				&sl wNAV
+				&mdResWin
 				&none						// 
 
 				// ----------------------------------------
@@ -2423,7 +2423,7 @@
 				&none
 				&none						// 
 				&none						//
-				&sl wNAV
+				&mdResWin
 				&none						// 
 
 				// ----------------------------------------
@@ -2497,7 +2497,7 @@
 				&sl wGUI					//
 				&sl wSFUNC					// deep
 				&none
-				&sl wNAV
+				&mdResWin
 				&none						//
 
 				// ----------------------------------------
@@ -2570,7 +2570,7 @@
 				&wModSCtlReset
 				&trans						// 
 				&none
-				&sl wNAV
+				&mdResWin
 				&none						//
 
 				// ----------------------------------------       
@@ -2644,7 +2644,7 @@
 				&trans
 				&none						// 
 				&none						//
-				&sl wNAV
+				&mdResWin
 				&none						// 
 
 				// ----------------------------------------
@@ -2718,7 +2718,7 @@
 				&none
 				&none					// 
 				&none					//
-				&sl wNAV
+				&mdResWin
 				&none					//
 
 				// ----------------------------------------
@@ -2790,7 +2790,7 @@
 				&none
 				&none					// 
 				&none					//
-				&sl wNAV
+				&mdResWin
 				&none					//
 
 				// ----------------------------------------
@@ -2864,7 +2864,7 @@
 				&kp LC(SPC)
 				&none						// 
 				&none						//
-				&sl wNAV
+				&mdResWin
 				&none						// 
 
 				// ----------------------------------------
@@ -2942,7 +2942,7 @@
 				&kp LG(S)
 				&wAlterShift				// 
 				&wPNAVShift					//
-				&wNavShift					//
+				&mdResWin	
 				&wNrShift
 
 				// ----------------------------------------
@@ -3014,7 +3014,7 @@
 				&kp LG(LS(S))
 				&wAlterShift				// 
 				&wPNAVShift					//
-				&wNavShift					//
+				&mdResWin		
 				&wNrShift
 
 				// ----------------------------------------
