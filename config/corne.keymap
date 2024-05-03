@@ -74,8 +74,6 @@
 
     behaviors {
 
-	
-
 		// ------------------------- MAC ---------------------
 	
 
@@ -103,6 +101,13 @@
             bindings = <&sl mLCHAR>, <&to mLCHAR>;
         };
 
+		mdRes: tap_dance_mdRes {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_mdRes";
+            #binding-cells = <0>;
+            tapping-term-ms = <1000>;
+            bindings = <&to mCHAR>, <&to mCHAR>;
+        };
 
 
 		// ------------------------- WiN ---------------------
@@ -129,7 +134,13 @@
             tapping-term-ms = <1000>;
             bindings = <&sl wLCHAR>, <&to wLCHAR>;
         };
-
+		mdResWin: tap_dance_mdResWin {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_mdResWin";
+            #binding-cells = <0>;
+            tapping-term-ms = <1000>;
+            bindings = <&to wCHAR>, <&to wCHAR>;
+        };
 
     };
 
@@ -996,7 +1007,7 @@
 				&kp SPACE				
 				&sl mFUNC
 				&sl mPRG
-				&mNavShift	
+				&mdRes	
 				&mdNr
 
 				// ----------------------------------------							
@@ -2184,7 +2195,7 @@
 				&kp SPACE				
 				&sl wFUNC
 				&sl wPRG
-				&wNavShift
+				&mdResWin
 				&mdNrWin
 
 				// ----------------------------------------							
