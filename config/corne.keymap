@@ -106,7 +106,7 @@
             label = "TAP_DANCE_mdRes";
             #binding-cells = <0>;
             tapping-term-ms = <1000>;
-            bindings = <&to mCHAR>, <&to mCHAR>;
+            bindings = <&sl mNAV>, <&to mCHAR>;
         };
 
 
@@ -139,7 +139,7 @@
             label = "TAP_DANCE_mdResWin";
             #binding-cells = <0>;
             tapping-term-ms = <1000>;
-            bindings = <&to wCHAR>, <&to wCHAR>;
+            bindings = <&sl wNAV>, <&to wCHAR>;
         };
 
     };
@@ -717,7 +717,7 @@
 				&kp SPACE
 				&sl mFUNC
 				&sl mPRG
-				&sl mNAV
+				&mdRes
 				&mdNr
 
 				// ----------------------------------------
@@ -790,7 +790,7 @@
 				&mSpaceReset 
 				&mFuncReset
 				&mPrgReset
-				&sl mNAV
+				&mdRes
 				&none
 			>;		
 		};
@@ -861,7 +861,7 @@
 				&kp SPACE
 				&sl mFUNC
 				&sl mPRG
-				&sl mNAV
+				&mdRes
 				&mdNr
 			>;		
 		};
@@ -932,7 +932,7 @@
 				&mSpaceReset 
 				&mFuncReset
 				&mPrgReset
-				&mNavShift
+				&mdRes
 				&mdNr
 
 				// ----------------------------------------
@@ -1007,7 +1007,7 @@
 				&kp SPACE				
 				&sl mFUNC
 				&sl mPRG
-				&to mCHAR	
+				&mdRes
 				&mdNr
 
 				// ----------------------------------------							
@@ -1082,7 +1082,7 @@
 				&none
 				&none
 				&sl mSPRG					// deep						
-				&sl mNAV
+				&mdRes
 				&none
 
 				// ----------------------------------------
@@ -1157,7 +1157,7 @@
 				&none						//
 				&none
 				&trans						// 
-				&sl mNAV
+				&mdRes
 				&none						// 
 
 				// ----------------------------------------
@@ -1234,7 +1234,7 @@
 				&none
 				&none						// 
 				&none						//
-				&sl mNAV
+				&mdRes
 				&none						// 
 
 				// ----------------------------------------
@@ -1307,7 +1307,7 @@
 				&sl mGUI					//
 				&sl mSFUNC					// deep
 				&none
-				&sl mNAV
+				&mdRes
 				&none						//
 
 				// ----------------------------------------
@@ -1380,7 +1380,7 @@
 				&mModSGuiReset
 				&trans						// 
 				&none
-				&sl mNAV
+				&mdRes
 				&none						//
 
 				// ----------------------------------------       
@@ -1453,7 +1453,7 @@
 				&trans
 				&none						// 
 				&none						//
-				&sl mNAV
+				&mdRes
 				&none						// 
 
 				// ----------------------------------------
@@ -1528,7 +1528,7 @@
 				&none		 			//
 				&none					// 
 				&none					//
-				&sl mNAV
+				&mdRes
 				&none					//
 
 				// ----------------------------------------
@@ -1600,7 +1600,7 @@
 				&none
 				&none					// 
 				&none					//
-				&sl mNAV
+				&mdRes
 				&none					//
 
 				// ----------------------------------------
@@ -1674,7 +1674,7 @@
 				&kp LG(SPACE)
 				&none						// 
 				&none						//
-				&sl mNAV
+				&mdRes
 				&none						// 
 
 				// ----------------------------------------
@@ -1751,7 +1751,7 @@
 				&kp LG(SPACE)
 				&mAlterShift				
 				&mPNAVShift					
-				&mNavShift					
+				&mdRes	
 				&mNrShift
 
 				// ----------------------------------------
@@ -1825,7 +1825,7 @@
 				&kp LG(LS(SPACE))
 				&mAlterShift				
 				&mPNAVShift					
-				&mNavShift					
+				&mdRes			
 				&mNrShift
 
 				// ----------------------------------------
