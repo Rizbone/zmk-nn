@@ -1007,7 +1007,7 @@
 				&kp SPACE				
 				&sl mFUNC
 				&sl mPRG
-				&mdRes	
+				&to mCHAR	
 				&mdNr
 
 				// ----------------------------------------							
@@ -2195,7 +2195,7 @@
 				&kp SPACE				
 				&sl wFUNC
 				&sl wPRG
-				&mdResWin
+				&to wCHAR
 				&mdNrWin
 
 				// ----------------------------------------							
