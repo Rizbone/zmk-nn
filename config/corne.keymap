@@ -807,7 +807,7 @@
 				&mSpaceReset 
 				&mFuncReset
 				&mPrgReset
-				&mdResShift
+				&mNavShift
 				&none
 			>;		
 		};
@@ -1995,7 +1995,7 @@
 				&wSpaceReset 
 				&wFuncReset
 				&wPrgReset
-				&mdResShiftWin
+				&wNavShift
 				&none
 			>;		
 		};
