@@ -156,7 +156,7 @@
             label = "TAP_DANCE_mdResWin";
             #binding-cells = <0>;
             tapping-term-ms = <1000>;
-            bindings = <wNavShift>, <&to wCHAR>;
+            bindings = <&wNavShift>, <&to wCHAR>;
         };
 
     };
