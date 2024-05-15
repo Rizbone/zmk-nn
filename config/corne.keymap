@@ -109,9 +109,9 @@
             bindings = <&sl mNAV>, <&to mCHAR>;
         };
 
-		mdResShift: tap_dance_mdRes {
+		mdResShift: tap_dance_mdResShift {
             compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_mdRes";
+            label = "TAP_DANCE_mdResShift";
             #binding-cells = <0>;
             tapping-term-ms = <1000>;
             bindings = <&mNavShift>, <&to mCHAR>;
@@ -151,9 +151,9 @@
             bindings = <&sl wNAV>, <&to wCHAR>;
         };
 
-		mdResShiftWin: tap_dance_mdResWin {
+		mdResShiftWin: tap_dance_mdResShiftWin {
             compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_mdResWin";
+            label = "TAP_DANCE_mdResShiftWin";
             #binding-cells = <0>;
             tapping-term-ms = <1000>;
             bindings = <&wNavShift>, <&to wCHAR>;
