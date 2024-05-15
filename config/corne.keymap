@@ -2211,7 +2211,7 @@
 				&sl wSYM
 				&kp SPACE				
 				&sl wFUNC
-				&sl wPRG
+				&wReset
 				&mdResWin
 				&mdNrWin
 
