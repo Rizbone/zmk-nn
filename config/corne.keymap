@@ -1647,11 +1647,11 @@
 				// ----------------------------------------
 
 				&kp ESC						// 
-				&none
-				&none
-				&none
-				&none
-				&none
+				&kp LC(LS(F1))
+				&kp LC(LS(F2))
+				&kp LC(LS(F3))
+				&kp LC(LS(F4))
+				&kp LC(LS(F5))
 
 				&kp LG(LA(ENTER))			// 						//
 				&kp LG(LA(KP_MINUS))		// Reset
@@ -1663,11 +1663,11 @@
 				// ----------------------------------------
 		
 				&none
-				&none
-				&none
-				&none
-				&none
-				&none
+				&kp LC(LS(F6))
+				&kp LC(LS(F7))
+				&kp LC(LS(F8))
+				&kp LC(LS(F9))
+				&kp LC(LS(F10))
 
 				&kp LG(LA(LS(LEFT)))		 
 				&kp LG(LA(LEFT))			// 
@@ -1679,11 +1679,11 @@
 				// ----------------------------------------
 
 				&turnOnMac
-				&none
-				&none
-				&none
-				&none
-				&none
+				&kp LC(LS(F11))
+				&kp LC(LS(F12))
+				&kp LC(LS(F13))
+				&kp LC(LS(F14))
+				&kp LC(LS(F15))
 
 				&kp LC(F11)
 				&kp LG(HOME)
@@ -2169,11 +2169,11 @@
 				// ----------------------------------------
 
 				&kp LG(D)				// Hide all
-				&kp LG(PG_UP)
-				&kp LG(LS(LEFT))
-				&wWinUp
-				&kp LG(LS(RIGHT))
-				&kp LC(LA(ENTER))			
+				&kp LG(LA(F1)) 					
+				&kp LG(LA(F2)) 					
+				&kp LG(LA(F3)) 					
+				&kp LG(LA(F4)) 					
+				&kp LG(LA(F5)) 			
 
 				&kp LG(LA(F6)) 					
 				&kp LG(LA(F7)) 					
@@ -2185,27 +2185,27 @@
 				// ----------------------------------------
 
 				&kp LG(LS(TAB))				
-				&kp LG(PG_DN)
-				&wWinLeft
-				&wWinDown
-				&wWinRight
-				&none
+				&kp LG(LC(F1)) 					
+				&kp LG(LC(F2)) 					
+				&kp LG(LC(F3))					
+				&kp LG(LC(F4)) 					
+				&kp LG(LC(F5)) 	
 
-				&kp LA(LG(LC(F1))) 					
-				&kp LA(LG(LC(F2))) 					
-				&kp LA(LG(LC(F3))) 					
-				&kp LA(LG(LC(F4))) 					
-				&kp LA(LG(LC(F5))) 	
+				&kp LG(LC(F6)) 					
+				&kp LG(LC(F7)) 					
+				&kp LG(LC(F8))					
+				&kp LG(LC(F9)) 					
+				&kp LG(LC(F10)) 	
 				&kp LG(LS(F4))
 
 				// ----------------------------------------
 
 				&kp LG(LS(F5))
-				&none
-				&none
-				&none
-				&none
-				&none
+				&kp LA(LG(LC(F1))) 					
+				&kp LA(LG(LC(F2))) 					
+				&kp LA(LG(LC(F3))) 					
+				&kp LA(LG(LC(F4))) 					
+				&kp LA(LG(LC(F5))) 	
 
 				&kp LA(LG(LC(F6))) 					
 				&kp LA(LG(LC(F7))) 					
@@ -2245,7 +2245,7 @@
 
 				// ----------------------------------------
 
-				&kp LC(LA(ENTER))			//
+				&kp ESC
 				&kp PG_UP					//
 				&kp LS(TAB)
 				&kp UP						// 
@@ -2284,11 +2284,11 @@
 				&kp END
 				&none						// 
 
-				&none						//
-				&none						//
-				&none						// 
-				&none						//
-				&none						// 
+				&kp C_PLAY					//
+				&kp C_PREV					//
+				&kp C_VOL_DN						// 
+				&kp C_VOL_UP						//
+				&kp C_NEXT					// 
 				&none						//
 
 				// ----------------------------------------
@@ -2767,47 +2767,47 @@
 				&wReset
 				&none
 				&none
-				&kp C_VOL_UP
 				&none
-				&none
+				&kp LC(F1)
+				&kp LC(LA(DELETE))
 
-				&kp LG(LA(F1)) 					
-				&kp LG(LA(F2)) 					
-				&kp LG(LA(F3)) 					
-				&kp LG(LA(F4)) 					
-				&kp LG(LA(F5)) 						
-				&kp DEL				//
+				&kp LC(LA(ENTER))	
+				&kp LG(LS(LEFT))
+				&wWinUp
+				&kp LG(LS(RIGHT))
+				&kp LG(PG_UP)				
+				&kp BACKSPACE			
 
 				// ----------------------------------------
 		
 				&none
 				&none
-				&kp K_MUTE
-				&kp C_VOL_DN
-				&kp C_PLAY	
 				&none
+				&kp LC(LA(LG(U)))
+				&kp LG(LS(S))
+				&kp LG(A)
 
-				&kp LG(LC(F1))
-				&kp LG(LC(F2))
-				&kp LG(LC(F3)) 					
-				&kp LG(LC(F4)) 					
-				&kp LG(LC(F5))				
+				&kp LC(LA(LG(ENTER)))	
+				&wWinLeft
+				&wWinDown
+				&wWinRight
+				&kp LG(PG_DN)			
 				&kp LC(ENTER)				// 
 
 				// ----------------------------------------
 
 				&turnOnMac
 				&none
-				&kp C_NEXT
-				&kp C_PREV
 				&none
-				&none
+				&kp LG(O)
+				&kp LG(E)
+				&kp LG(L)
 
-				&kp LG(LC(F6))
-				&kp LG(LC(F7))
-				&kp LG(LC(F8)) 					
-				&kp LG(LC(F9)) 					
-				&kp LG(LC(F10))
+				&kp LG(D)
+				&kp LG(HOME)
+				&kp LG(LS(HOME))			
+				&kp LG(LS(END))			
+				&kp LG(END)
 				&turnOnWin
 
 				// ----------------------------------------
