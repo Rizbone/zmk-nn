@@ -77,7 +77,7 @@
 		mo_sl: behavior_sl_mo {
 			compatible = "zmk,behavior-hold-tap";
 			#binding-cells = <2>;
-			flavor = "hold-preferred";
+			flavor = "tap-preferred";
 			tapping-term-ms = <200>;
 			bindings = <&mo>, <&sl>;
 		};
@@ -741,7 +741,7 @@
 				&sl mSYM
 				&kp SPACE
 				&sl mFUNC
-				&mo_sl mSPRG mPRG
+				&mo_sl mPRG mSPRG
 				&mdRes
 				&mdNr
 
@@ -885,7 +885,7 @@
 				&sl mSYM
 				&kp SPACE
 				&sl mFUNC
-				&mo_sl mSPRG mPRG
+				&mo_sl mPRG mSPRG
 				&mdRes
 				&mdNr
 			>;		
@@ -1031,7 +1031,7 @@
 				&sl mSYM
 				&kp SPACE				
 				&sl mFUNC
-				&mo_sl mSPRG mPRG
+				&mo_sl mPRG mSPRG
 				&mdRes
 				&mdNr
 
@@ -1928,7 +1928,7 @@
 				&sl wSYM
 				&kp SPACE
 				&sl wFUNC
-				&mo_sl wSPRG wPRG
+				&mo_sl wPRG wSPRG
 				&mdResWin
 				&mdNrWin
 
@@ -2072,7 +2072,7 @@
 				&sl wSYM
 				&kp SPACE
 				&sl wFUNC
-				&mo_sl wSPRG wPRG
+				&mo_sl wPRG wSPRG
 				&mdResWin
 				&none
 			>;		
@@ -2218,7 +2218,7 @@
 				&sl wSYM
 				&kp SPACE				
 				&sl wFUNC
-				&mo_sl wSPRG wPRG
+				&mo_sl wPRG wSPRG
 				&mdResWin
 				&mdNrWin
 
