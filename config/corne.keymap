@@ -12,8 +12,6 @@
 #define mNR 1
 #define mNRhard 2
 #define mLCHAR 3
-
-
 #define mNAV 4
 
 #define mPRG 5
@@ -30,34 +28,31 @@
 #define mGUI 13
 
 #define mSShift 14
-#define mSSShift 15
 
 
 // ------- WIN -------------------
 
 
-#define wCHAR 16
-#define wNR 17
-#define wNRhard 18
-#define wLCHAR 19
+#define wCHAR 15
+#define wNR 16
+#define wNRhard 17
+#define wLCHAR 18
+#define wNAV 19
 
-#define wNAV 20
+#define wPRG 20
+#define wSPRG 21
+#define wPNAV 22
 
-#define wPRG 21
-#define wSPRG 22
-#define wPNAV 23
+#define wFUNC 23
+#define wSFUNC 24
+#define wAlter 25
 
-#define wFUNC 24
-#define wSFUNC 25
-#define wAlter 26
+#define wSYM 26
+#define wSSYM 27
 
-#define wSYM 27
-#define wSSYM 28
+#define wGUI 28
 
-#define wGUI 29
-
-#define wSShift 30
-#define wSSShift 31
+#define wSShift 29
 
 
 
@@ -73,14 +68,6 @@
 / {
 
     behaviors {
-
-		mo_sl: behavior_sl_mo {
-			compatible = "zmk,behavior-hold-tap";
-			#binding-cells = <2>;
-			flavor = "tap-preferred";
-			tapping-term-ms = <200>;
-			bindings = <&mo>, <&sl>;
-		};
 
 		// ------------------------- MAC ---------------------
 	
@@ -306,27 +293,6 @@
 
 
 
-		mFuncMarkLine: mFuncMarLine {
-            label = "mFuncMarkLnie";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&kp LG(RIGHT)>
-				, <&kp LS(LG(LEFT))>
-                ;
-    	};
-
-		mFuncMarkWord: mFuncMarkWord {
-            label = "mFuncMarkWord";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&kp LA(RIGHT)>
-				, <&kp LS(LA(LEFT))>
-                ;
-    	};
-
-
 
 		mAlterShift: mAlterShift {
             label = "mAlterShift";
@@ -376,17 +342,6 @@
 				;
     	};
 
-		mDeepShift: mDeepShift {
-            label = "mDeepShift";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&to mCHAR>
-                , <&macro_press &sl mSSShift>
-    			, <&macro_pause_for_release>
-				, <&macro_release &sl mSSShift>
-				;
-    	};
 
 
 		// ------------------------- WiN ---------------------
@@ -495,28 +450,6 @@
 
 
 
-		wFuncMarkLine: wFuncMarLine {
-            label = "wFuncMarkLine";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&kp END>
-				, <&kp LS(HOME)>
-                ;
-    	};
-
-		wFuncMarkWord: wFuncMarkWord {
-            label = "wFuncMarkWord";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&kp LC(RIGHT)>
-				, <&kp LC(LS(LEFT))>
-                ;
-    	};
-
-
-
 		wAlterShift: wAlterShift {
             label = "wAlterShift";
             compatible = "zmk,behavior-macro";
@@ -563,18 +496,6 @@
                 , <&macro_press &sl wNR>
     			, <&macro_pause_for_release>
 				, <&macro_release &sl wNR>
-				;
-    	};
-
-		wDeepShift: wDeepShift {
-            label = "wDeepShift";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&to wCHAR>
-                , <&macro_press &sl wSSShift>
-    			, <&macro_pause_for_release>
-				, <&macro_release &sl wSSShift>
 				;
     	};
 
@@ -1740,7 +1661,7 @@
 
 				// ----------------------------------------
 		
-				&mDeepShift
+				&none
 				&none	
 				&kp K_MUTE
 				&kp C_VOL_DN
@@ -1783,78 +1704,6 @@
 			>;
 		};
 
-
-
-		// -----------------------------------------------------|
-		// Layer 19 - mSideShift =	Side Shift					|
-		// -----------------------------------------------------|
-
-		mac_mSSShift
-		{
-			label = "MAC";
-
-			bindings = <
-
-				// ----------------------------------------
-
-				&kp ESC						// 
-				&none	
-				&none	
-				&kp C_VOL_UP
-				&none
-				&none
-
-				&kp LC(LS(F1)) 									
-				&kp LC(LS(F2)) 					
-				&kp LC(LS(F3)) 					
-				&kp LC(LS(F4)) 					
-				&kp LC(LS(F5)) 					
-				&kp DEL				//
-
-				// ----------------------------------------
-		
-				&mDeepShift
-				&none	
-				&kp K_MUTE
-				&kp C_VOL_DN
-				&kp C_PLAY
-				&none
-
-				&kp LC(LS(F6)) 					
-				&kp LC(LS(F7)) 					
-				&kp LC(LS(F8)) 					
-				&kp LC(LS(F9)) 					
-				&kp LC(LS(F10)) 					
-				&kp LA(ENTER)				// 
-
-				// ----------------------------------------
-
-				&turnOnMac
-				&none
-				&kp C_NEXT
-				&kp C_PREV
-				&none
-				&none
-
-				&kp LC(LS(F11)) 					
-				&kp LC(LS(F12)) 					
-				&kp LC(LS(F13)) 					
-				&kp LC(LS(F14)) 					
-				&kp LC(LS(F15)) 
-				&turnOnWin
-
-				// ----------------------------------------
-		
-				&none
-				&kp LG(LS(SPACE))
-				&mAlterShift				
-				&mPNAVShift					
-				&mdRes			
-				&mNrShift
-
-				// ----------------------------------------
-			>;
-		};
 
 
 
@@ -2930,7 +2779,7 @@
 
 				// ----------------------------------------
 		
-				&wDeepShift
+				&none
 				&none
 				&kp K_MUTE
 				&kp C_VOL_DN
@@ -2972,80 +2821,6 @@
 				// ----------------------------------------
 			>;
 		};
-
-
-		// -----------------------------------------------------|
-		// Layer 19 - mSideShift =	Side Shift					|
-		// -----------------------------------------------------|
-
-		win_mSSShift
-		{
-			label = "win";
-
-			bindings = <
-
-				// ----------------------------------------
-
-				&wReset
-				&none
-				&none
-				&kp C_VOL_UP
-				&none
-				&none
-
-				&none
-				&none
-				&none				
-				&kp LC(LA(DEL)) 					
-				&kp LG(L) 					
-				&kp DEL				//
-
-				// ----------------------------------------
-		
-				&wDeepShift
-				&none
-				&kp K_MUTE
-				&kp C_VOL_DN
-				&kp C_PLAY	
-				&none
-
-				&kp LA(LG(LC(U))) 					
-				&kp LS(LG(S))
-				&kp LG(E)
-				&none
-				&kp LG(O)
-				&kp LA(ENTER)				// 
-
-				// ----------------------------------------
-
-				&turnOnMac
-				&none
-				&kp C_NEXT
-				&kp C_PREV
-				&none
-				&none
-
-				&kp LC(F1)
-				&kp LA(E)
-				&none				
-				&none
-				&kp LG(A)					
-				&turnOnWin
-
-				// ----------------------------------------
-		
-				&none
-				&kp LG(LS(S))
-				&wAlterShift				// 
-				&wPNAVShift					//
-				&mdResWin		
-				&wNrShift
-
-				// ----------------------------------------
-			>;
-		};
-
-
 
 
 
