@@ -74,6 +74,14 @@
 
     behaviors {
 
+		sl_mo: behavior_sl_mo {
+			compatible = "zmk,behavior-hold-tap";
+			#binding-cells = <2>;
+			flavor = "hold-preferred";
+			tapping-term-ms = <200>;
+			bindings = <&sl>, <&mo>;
+		};
+
 		// ------------------------- MAC ---------------------
 	
 
@@ -733,7 +741,7 @@
 				&sl mSYM
 				&kp SPACE
 				&sl mFUNC
-				&sl mPRG
+				&sl_mo mPRG mPRG
 				&mdRes
 				&mdNr
 
@@ -1921,7 +1929,7 @@
 				&sl wSYM
 				&kp SPACE
 				&sl wFUNC
-				&sl wPRG
+				&sl_mo mPRG mPRG
 				&mdResWin
 				&mdNrWin
 
