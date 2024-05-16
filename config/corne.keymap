@@ -741,7 +741,7 @@
 				&sl mSYM
 				&kp SPACE
 				&sl mFUNC
-				&mo_sl mPRG mSPRG
+				&sl mPRG 
 				&mdRes
 				&mdNr
 
@@ -885,7 +885,7 @@
 				&sl mSYM
 				&kp SPACE
 				&sl mFUNC
-				&mo_sl mPRG mSPRG
+				&sl mPRG 
 				&mdRes
 				&mdNr
 			>;		
@@ -1031,7 +1031,7 @@
 				&sl mSYM
 				&kp SPACE				
 				&sl mFUNC
-				&mo_sl mPRG mSPRG
+				&sl mPRG 
 				&mdRes
 				&mdNr
 
@@ -1928,7 +1928,7 @@
 				&sl wSYM
 				&kp SPACE
 				&sl wFUNC
-				&mo_sl wPRG wSPRG
+				&sl mPRG 
 				&mdResWin
 				&mdNrWin
 
@@ -2072,7 +2072,7 @@
 				&sl wSYM
 				&kp SPACE
 				&sl wFUNC
-				&mo_sl wPRG wSPRG
+				&sl mPRG 
 				&mdResWin
 				&none
 			>;		
@@ -2218,7 +2218,7 @@
 				&sl wSYM
 				&kp SPACE				
 				&sl wFUNC
-				&mo_sl wPRG wSPRG
+				&sl mPRG 
 				&mdResWin
 				&mdNrWin
 
