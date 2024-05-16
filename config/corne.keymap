@@ -74,12 +74,12 @@
 
     behaviors {
 
-		sl_mo: behavior_sl_mo {
+		mo_sl: behavior_sl_mo {
 			compatible = "zmk,behavior-hold-tap";
 			#binding-cells = <2>;
 			flavor = "hold-preferred";
 			tapping-term-ms = <200>;
-			bindings = <&sl>, <&mo>;
+			bindings = <&mo>, <&sl>;
 		};
 
 		// ------------------------- MAC ---------------------
@@ -346,9 +346,9 @@
             #binding-cells = <0>;
             bindings
                 = <&to mCHAR>
-                , <&macro_press &sl mPNAV>
+                , <&macro_press &sl mSPRG>
     			, <&macro_pause_for_release>
-				, <&macro_release &sl mPNAV>
+				, <&macro_release &sl mSPRG>
                 ;
     	};
 
@@ -535,9 +535,9 @@
             #binding-cells = <0>;
             bindings
                 = <&to wCHAR>
-                , <&macro_press &sl wPNAV>
+                , <&macro_press &sl wSPRG>
     			, <&macro_pause_for_release>
-				, <&macro_release &sl wPNAV>
+				, <&macro_release &sl wSPRG>
                 ;
     	};
 
@@ -741,7 +741,7 @@
 				&sl mSYM
 				&kp SPACE
 				&sl mFUNC
-				&sl_mo mPRG mPRG
+				&mo_sl mPRG mPRG
 				&mdRes
 				&mdNr
 
@@ -885,7 +885,7 @@
 				&sl mSYM
 				&kp SPACE
 				&sl mFUNC
-				&sl mPRG
+				&mo_sl mPRG mPRG
 				&mdRes
 				&mdNr
 			>;		
@@ -969,7 +969,7 @@
 
 
 		// -----------------------------------------------------|
-		// Layer = 4 - - Navigation						|
+		// Layer = 4 - - Navigation								|
 		// -----------------------------------------------------|
 
 		mac_navigation
@@ -1031,7 +1031,7 @@
 				&sl mSYM
 				&kp SPACE				
 				&sl mFUNC
-				&sl mPRG
+				&mo_sl mPRG mPRG
 				&mdRes
 				&mdNr
 
@@ -1929,7 +1929,7 @@
 				&sl wSYM
 				&kp SPACE
 				&sl wFUNC
-				&sl_mo mPRG mPRG
+				&mo_sl wPRG wPRG
 				&mdResWin
 				&mdNrWin
 
@@ -2073,7 +2073,7 @@
 				&sl wSYM
 				&kp SPACE
 				&sl wFUNC
-				&sl wPRG
+				&mo_sl wPRG wPRG
 				&mdResWin
 				&none
 			>;		
@@ -2219,7 +2219,7 @@
 				&sl wSYM
 				&kp SPACE				
 				&sl wFUNC
-				&wReset
+				&mo_sl wPRG wPRG
 				&mdResWin
 				&mdNrWin
 
