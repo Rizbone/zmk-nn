@@ -1928,7 +1928,7 @@
 				&sl wSYM
 				&kp SPACE
 				&sl wFUNC
-				&sl mPRG 
+				&sl wPRG 
 				&mdResWin
 				&mdNrWin
 
@@ -2072,7 +2072,7 @@
 				&sl wSYM
 				&kp SPACE
 				&sl wFUNC
-				&sl mPRG 
+				&sl wPRG 
 				&mdResWin
 				&none
 			>;		
@@ -2218,7 +2218,7 @@
 				&sl wSYM
 				&kp SPACE				
 				&sl wFUNC
-				&sl mPRG 
+				&sl wPRG 
 				&mdResWin
 				&mdNrWin
 
