@@ -293,7 +293,6 @@
 
 
 
-
 		mAlterShift: mAlterShift {
             label = "mAlterShift";
             compatible = "zmk,behavior-macro";
@@ -312,9 +311,9 @@
             #binding-cells = <0>;
             bindings
                 = <&to mCHAR>
-                , <&macro_press &sl mSPRG>
+                , <&macro_press &sl mPNAV>
     			, <&macro_pause_for_release>
-				, <&macro_release &sl mSPRG>
+				, <&macro_release &sl mPNAV>
                 ;
     	};
 
@@ -468,9 +467,9 @@
             #binding-cells = <0>;
             bindings
                 = <&to wCHAR>
-                , <&macro_press &sl wSPRG>
+                , <&macro_press &sl wPNAV>
     			, <&macro_pause_for_release>
-				, <&macro_release &sl wSPRG>
+				, <&macro_release &sl wPNAV>
                 ;
     	};
 
@@ -499,6 +498,9 @@
 				;
     	};
 
+
+
+		// specials
 
 		wAltShot: wAltShot {
             label = "wAltShot";
@@ -561,7 +563,6 @@
                 ; 
     	};
 	
-
 
 
 		// Reset
@@ -1052,11 +1053,11 @@
 				// ----------------------------------------
 
 				&kp LG(LA(H))				// #OPEN
-				&none						//
-				&kp LG(LA(KP_MINUS))		// Reset
-				&kp LG(LA(UP))				// 
-				&kp LG(LA(KP_PLUS))			// Vollbild
-				&kp LG(LA(ENTER))			// 
+				&kp LG(LA(F1)) 					
+				&kp LG(LA(F2)) 					
+				&kp LG(LA(F3)) 					
+				&kp LG(LA(F4)) 					
+				&kp LG(LA(F5)) 
 
 				&kp LG(LA(F6)) 					
 				&kp LG(LA(F7)) 					
@@ -1068,27 +1069,27 @@
 				// ----------------------------------------
 
 				&kp LG(LS(TAB))			// #OPEN
-				&kp LG(LA(LS(LEFT)))		 
-				&kp LG(LA(LEFT))			// 
-				&kp LG(LA(DOWN))			// 
-				&kp LG(LA(RIGHT))			// 
-				&kp LG(LA(LS(RIGHT)))			
+				&kp LG(LC(F1)) 					
+				&kp LG(LC(F2)) 					
+				&kp LG(LC(F3)) 					
+				&kp LG(LC(F4)) 					
+				&kp LG(LC(F5)) 	
 
-				&kp LA(LG(LC(F1))) 					
-				&kp LA(LG(LC(F2))) 					
-				&kp LA(LG(LC(F3))) 					
-				&kp LA(LG(LC(F4))) 					
-				&kp LA(LG(LC(F5))) 	
+				&kp LG(LC(F6)) 					
+				&kp LG(LC(F7)) 					
+				&kp LG(LC(F8)) 					
+				&kp LG(LC(F9)) 					
+				&kp LG(LC(F10)) 	
 				&kp LG(LS(F4))
 
 				// ----------------------------------------
 
 				&kp LG(LS(F5))
-				&none						// 
-				&none						//
-				&none						// 
-				&none						// 
-				&none						// 
+				&kp LA(LG(LC(F1))) 					
+				&kp LA(LG(LC(F2))) 					
+				&kp LA(LG(LC(F3))) 					
+				&kp LA(LG(LC(F4))) 					
+				&kp LA(LG(LC(F5))) 	
 
 				&kp LA(LG(LC(F6))) 					
 				&kp LA(LG(LC(F7))) 					
@@ -1135,11 +1136,11 @@
 				&kp BACKSPACE				 
 
 				&bt BT_CLR
-				&bt BT_SEL 0
 				&bt BT_SEL 1
 				&bt BT_SEL 2
-				&none
+				&bt BT_SEL 3
 				&sys_reset
+				&none
 				
 
 				// ----------------------------------------
@@ -1167,11 +1168,11 @@
 				&kp END
 				&none						// 
 
-				&none						//
-				&none						//
-				&none						// 
-				&none						//
-				&none						// 
+				&kp C_PLAY					//
+				&kp C_PREV					//
+				&kp C_VOL_DN						// 
+				&kp C_VOL_UP						//
+				&kp C_NEXT					// 
 				&none						//
 
 				// ----------------------------------------
@@ -1648,47 +1649,47 @@
 				&kp ESC						// 
 				&none
 				&none
-				&kp C_VOL_UP
+				&none
 				&none
 				&none
 
-				&kp LG(LA(F1)) 					
-				&kp LG(LA(F2)) 					
-				&kp LG(LA(F3)) 					
-				&kp LG(LA(F4)) 					
-				&kp LG(LA(F5)) 
-				&kp DEL				//
+				&kp LG(LA(ENTER))			// 						//
+				&kp LG(LA(KP_MINUS))		// Reset
+				&kp LG(LA(UP))				// 
+				&kp LG(LA(KP_PLUS))			// Vollbild
+				&kp LG(LA(LC(ENTER)))			// 	
+				&kp BACKSPACE
 
 				// ----------------------------------------
 		
 				&none
-				&none	
-				&kp K_MUTE
-				&kp C_VOL_DN
-				&kp C_PLAY						
+				&none
+				&none
+				&none
+				&none
 				&none
 
-				&kp LG(LC(F1))
-				&kp LG(LC(F2))
-				&kp LG(LC(F3)) 					
-				&kp LG(LC(F4)) 					
-				&kp LG(LC(F5))	
+				&kp LG(LA(LS(LEFT)))		 
+				&kp LG(LA(LEFT))			// 
+				&kp LG(LA(DOWN))			// 
+				&kp LG(LA(RIGHT))			// 
+				&kp LG(LA(LS(RIGHT)))					
 				&kp LC(ENTER)				// 
 
 				// ----------------------------------------
 
 				&turnOnMac
 				&none
-				&kp C_NEXT
-				&kp C_PREV
+				&none
+				&none
 				&none
 				&none
 
-				&kp LG(LC(F6))
-				&kp LG(LC(F7))
-				&kp LG(LC(F8)) 					
-				&kp LG(LC(F9)) 					
-				&kp LG(LC(F10))	
+				&kp LC(F11)
+				&kp LG(HOME)
+				&kp LG(LS(HOME))				
+				&kp LG(LS(END))				
+				&kp LG(END)
 				&turnOnWin
 
 				// ----------------------------------------
@@ -2252,11 +2253,11 @@
 				&kp BACKSPACE
 
 				&bt BT_CLR
-				&bt BT_SEL 0
 				&bt BT_SEL 1
 				&bt BT_SEL 2
-				&none
+				&bt BT_SEL 3
 				&sys_reset
+				&none
 
 				// ----------------------------------------
 		
