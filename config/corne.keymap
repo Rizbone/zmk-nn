@@ -46,9 +46,42 @@
 
 / {
 
-    behaviors
+    behaviors 
 	{
 
+		// Tap Dance Number
+		wMdNr: tap_dance_wMdNr 
+		{
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_wMdNr";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&to wNR>, <&to wNRhard>;
+        };
+
+		//Tab Dance Shift
+		wMdLs: tap_dance_wMdLs 
+		{
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_wMdLs";
+            #binding-cells = <0>;
+            tapping-term-ms = <1000>;
+            bindings = <&sl wLCHAR>, <&to wLCHAR>;
+        };
+		wMdRs: tap_dance_wMdRs 
+		{
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_wMdRs";
+            #binding-cells = <0>;
+            tapping-term-ms = <1000>;
+            bindings = <&sl wLCHAR>, <&to wLCHAR>;
+        };
+
+    };
+
+	
+	 macros 
+	 {
 
 
 
@@ -61,13 +94,6 @@
 	keymap
 	{	
 		compatible = "zmk,keymap";
-
-
-
-		// ----------------------------------------------------------------------------------------------|
-		// 											WIN			
-		// ----------------------------------------------------------------------------------------------|
-
 
 
 	};
