@@ -48,43 +48,32 @@
 
     behaviors {
 
-
-		mdNrWin: tap_dance_mdNrWin {
+		// Tap Dance Number
+		wMdNr: tap_dance_wMdNr 
+		{
             compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_mdNrWin";
+            label = "TAP_DANCE_wMdNr";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&to wNR>, <&to wNRhard>;
         };
 
-		mdLsWin: tap_dance_mdLsWin {
+		//Tab Dance Shift
+		wMdLs: tap_dance_wMdLs 
+		{
             compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_mdLsWin";
+            label = "TAP_DANCE_wMdLs";
             #binding-cells = <0>;
             tapping-term-ms = <1000>;
             bindings = <&sl wLCHAR>, <&to wLCHAR>;
         };
-		mdRsWin: tap_dance_mdRsWin {
+		wMdRs: tap_dance_wMdRs 
+		{
             compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_mdRsWin";
+            label = "TAP_DANCE_wMdRs";
             #binding-cells = <0>;
             tapping-term-ms = <1000>;
             bindings = <&sl wLCHAR>, <&to wLCHAR>;
-        };
-		mdResWin: tap_dance_mdResWin {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_mdResWin";
-            #binding-cells = <0>;
-            tapping-term-ms = <1000>;
-            bindings = <&sl wNAV>, <&to wCHAR>;
-        };
-
-		mdResShiftWin: tap_dance_mdResShiftWin {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_mdResShiftWin";
-            #binding-cells = <0>;
-            tapping-term-ms = <1000>;
-            bindings = <&wNavShift>, <&to wCHAR>;
         };
 
     };
@@ -92,8 +81,9 @@
 	
 	 macros {
 
-
-        wSpaceReset: wSpaceReset {
+		//Reset Keys
+        wSpaceReset: wSpaceReset 
+		{
             label = "wSpaceReset";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -102,7 +92,8 @@
                 , <&kp SPACE>
                 ;
     	};
-		wEnterReset: wEnterReset {
+		wEnterReset: wEnterReset 
+		{
             label = "wEnterReset";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -111,40 +102,8 @@
                 , <&kp ENTER>
                 ;
     	};
-		wPrgReset: wPrgReset {
-            label = "wPrgReset";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&to wCHAR>
-                , <&macro_press &sl wPRG>
-    			, <&macro_pause_for_release>
-				, <&macro_release &sl wPRG>
-                ;
-    	};
-		wFuncReset: wFuncReset {
-            label = "wFuncReset";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&to wCHAR>
-                , <&macro_press &sl wFUNC>
-    			, <&macro_pause_for_release>
-				, <&macro_release &sl wFUNC>
-                ;
-    	};
-		wSymReset: wSymReset {
-            label = "wSymReset";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&to wCHAR>
-                , <&macro_press &sl wSYM>
-    			, <&macro_pause_for_release>
-				, <&macro_release &sl wSYM>
-                ;
-    	};
-		wShiftReset: wShiftReset {
+		wShiftReset: wShiftReset
+		{
             label = "wShiftReset";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -158,7 +117,92 @@
 
 
 
-		wModSCtlReset: wModSCtlReset {
+		//Reset Daumen
+
+		wNrReset: wNrReset
+		{
+            label = "wNrReset";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&to wCHAR>
+                , <&macro_press &sl wNR>
+    			, <&macro_pause_for_release>
+				, <&macro_release &sl wNR>
+				;
+    	};
+
+				
+		wNavReset: wNavReset 
+		{
+            label = "wNavReset";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&to wCHAR>
+                , <&macro_press &sl wNAV>
+    			, <&macro_pause_for_release>
+				, <&macro_release &sl wNAV>
+                ;
+    	};
+
+		wPrgReset: wPrgReset 
+		{
+            label = "wPrgReset";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&to wCHAR>
+                , <&macro_press &sl wPRG>
+    			, <&macro_pause_for_release>
+				, <&macro_release &sl wPRG>
+                ;
+    	};
+
+		wFuncReset: wFuncReset
+		{
+            label = "wFuncReset";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&to wCHAR>
+                , <&macro_press &sl wFUNC>
+    			, <&macro_pause_for_release>
+				, <&macro_release &sl wFUNC>
+                ;
+    	};
+
+		wSymReset: wSymReset
+		{
+            label = "wSymReset";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&to wCHAR>
+                , <&macro_press &sl wSYM>
+    			, <&macro_pause_for_release>
+				, <&macro_release &sl wSYM>
+                ;
+    	};
+
+
+		wPNavReset: wPNavReset 
+		{
+            label = "wPNavReset";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&to wCHAR>
+                , <&macro_press &sl wPNAV>
+    			, <&macro_pause_for_release>
+				, <&macro_release &sl wPNAV>
+                ;
+    	};
+
+
+
+		wModSCtlReset: wModSCtlReset
+		{
             label = "wModSCtlReset";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -171,7 +215,8 @@
     	};
 
 
-		wModAltReset: wModAltReset {
+		wModAltReset: wModAltReset
+		{
             label = "wModAltReset";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -183,7 +228,8 @@
                 ;
     	};
 
-		wModGuiReset: wModGuiReset {
+		wModGuiReset: wModGuiReset 
+		{
             label = "wModGuiReset";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -194,58 +240,6 @@
 				, <&macro_release &sk LGUI>
                 ;
     	};
-
-
-
-		wAlterShift: wAlterShift {
-            label = "wAlterShift";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&to wCHAR>
-                , <&macro_press &sl wAlter>
-    			, <&macro_pause_for_release>
-				, <&macro_release &sl wAlter>
-                ;
-    	};
-
-		wPNAVShift: wPNAVShift {
-            label = "wPNAVShift";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&to wCHAR>
-                , <&macro_press &sl wPNAV>
-    			, <&macro_pause_for_release>
-				, <&macro_release &sl wPNAV>
-                ;
-    	};
-
-		wNavShift: wNavShift {
-            label = "wNavShift";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&to wCHAR>
-                , <&macro_press &sl wNAV>
-    			, <&macro_pause_for_release>
-				, <&macro_release &sl wNAV>
-				;
-    	};
-
-
-		wNrShift: wNrShift {
-            label = "wNrShift";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&to wCHAR>
-                , <&macro_press &sl wNR>
-    			, <&macro_pause_for_release>
-				, <&macro_release &sl wNR>
-				;
-    	};
-
 
 
 		// specials
@@ -393,7 +387,7 @@
 
 				// ----------------------------------------
 	
-				&mdLsWin
+				&wMdLs
 				&kp F
 				&kp V
 				&kp MINUS
@@ -405,7 +399,7 @@
 				&kp LBKT
 				&kp SQT
 				&kp K
-				&mdRsWin
+				&wMdRs
 
 				// ----------------------------------------
 
@@ -413,8 +407,8 @@
 				&kp SPACE
 				&sl wFUNC
 				&sl wPRG 
-				&mdResWin
-				&mdNrWin
+				&to wCHAR
+				&wMdNr
 
 				// ----------------------------------------
 			>;
@@ -486,7 +480,7 @@
 				&wSpaceReset 
 				&wFuncReset
 				&wPrgReset
-				&wNavShift
+				&wNavReset
 				&none
 			>;		
 		};
@@ -537,7 +531,7 @@
 
 				// ----------------------------------------
 
-				&mdLsWin
+				&wMdLs
 				&kp LS(N7)				// /
 				&kp LC(LA(MINUS))		// backlslash
 				&kp LS(N5)				// %
@@ -549,7 +543,7 @@
 				&kp COMMA				// ,
 				&kp LS(SLASH)			// _
 				&kp SLASH 				// -
-				&mdRsWin
+				&wMdRs
 
 				// ----------------------------------------
 		
@@ -557,7 +551,7 @@
 				&kp SPACE
 				&sl wFUNC
 				&sl wPRG 
-				&mdResWin
+				&to wCHAR
 				&none
 			>;		
 		};
@@ -609,7 +603,7 @@
 
 				// ----------------------------------------
 
-				&mdLsWin
+				&wMdLs
 				&kp LS(F)
 				&kp LS(V)
 				&kp LS(MINUS)
@@ -621,7 +615,7 @@
 				&kp LS(LBKT)
 				&kp LS(SQT)
 				&kp LS(K)
-				&mdRsWin					
+				&wMdRs					
 
 				// ----------------------------------------
 
@@ -629,8 +623,8 @@
 				&wSpaceReset 
 				&wFuncReset
 				&wPrgReset
-				&mdResWin
-				&mdNrWin
+				&to wCHAR
+				&wMdNr
 
 				// ----------------------------------------		
 			>;
@@ -702,9 +696,9 @@
 				&sl wSYM
 				&kp SPACE				
 				&sl wFUNC
-				&sl wPRG 
-				&mdResWin
-				&mdNrWin
+				&wReset 
+				&to wCHAR
+				&wMdNr
 
 				// ----------------------------------------							
 			>;
@@ -735,49 +729,49 @@
 				&bt BT_SEL 1
 				&bt BT_SEL 2
 				&bt BT_SEL 3
-				&sys_reset
-				&none
+				&bt BT_SEL 4
+				&kp BACKSPACE
 
 				// ----------------------------------------
 		
-				&none						//
+				&kp BACKSPACE		
 				&kp PG_DN					//
 				&kp LEFT
 				&kp DOWN
 				&kp RIGHT
 				&kp ENTER
 
-				&none						//
-				&kp LCTL					//
+				&kp C_PLAY					//						//
 				&kp LALT					// 
+				&kp LCTL					//
 				&kp LGUI					//
 				&kp LSHFT					// 
-				&none						//
+				&kp ENTER
 
 				// ----------------------------------------
 
-				&none						//
+				&kp LSHIFT						//
 				&kp HOME
-				&kp DELETE
-				&kp INSERT
+				&kp LC(LEFT)
+				&kp LC(RIGHT)
 				&kp END
-				&none						// 
+				&kp RSHIFT						
 
-				&kp C_PLAY					//
+				&kp C_MUTE					//
 				&kp C_PREV					//
-				&kp C_VOL_DN						// 
-				&kp C_VOL_UP						//
+				&kp C_VOL_DN						
+				&kp C_VOL_UP					
 				&kp C_NEXT					// 
 				&none						//
 
 				// ----------------------------------------
 		
-				&none						//
-				&none
-				&none						// 
-				&none						//
-				&mdResWin
-				&none						// 
+				&sl wSYM
+				&kp SPACE				
+				&sl wFUNC
+				&wReset 
+				&to wCHAR
+				&wMdNr					// 
 
 				// ----------------------------------------							
 			>;
@@ -799,7 +793,7 @@
 
 				// ----------------------------------------
 
-				&kp LG(LS(F1))
+				&kp LG(D)
 				&kp LG(LS(N1))				// 11
 				&kp LG(LS(N2))				// 12
 				&kp LG(LS(N3))				// 13
@@ -827,11 +821,11 @@
 				&kp LC(LG(N8))			//
 				&kp LC(LG(N9))			//
 				&kp LC(LG(N0))			//
-				&kp LG(LS(F16))
+				&kp LG(TAB)
 
 				// ----------------------------------------
 
-				&kp LG(LS(F2))
+				&kp LG(LS(F1))
 				&kp LS(LA(N1))			// 21 			
 				&kp LS(LA(N2))			// 22
 				&kp LS(LA(N3))			// 23
@@ -843,7 +837,7 @@
 				&kp LS(LA(N8))			// 28
 				&kp LS(LA(N9))			// 29
 				&kp LS(LA(N0))			// 30
-				&kp LG(LS(F3))
+				&kp LG(LS(F2))
 		
 				// ----------------------------------------
 
@@ -851,7 +845,7 @@
 				&none
 				&none
 				&sl wSPRG					// deep						
-				&mdResWin
+				&to wCHAR
 				&none
 
 				// ----------------------------------------
@@ -875,23 +869,23 @@
 
 				// ----------------------------------------
 
-				&kp LG(D)				// Hide all
-				&kp LG(LA(F1)) 					
-				&kp LG(LA(F2)) 					
-				&kp LG(LA(F3)) 					
-				&kp LG(LA(F4)) 					
-				&kp LG(LA(F5)) 			
+				&kp LG(I)				// Hide all
+				&none						//
+				&none						//
+				&none						//
+				&none						//
+				&none	
 
-				&kp LG(LA(F6)) 					
-				&kp LG(LA(F7)) 					
-				&kp LG(LA(F8)) 					
-				&kp LG(LA(F9)) 					
-				&kp LG(LA(F10)) 
+				&none						//
+				&none						//
+				&none						//
+				&none						//
+				&none	
 				&kp LC(LS(ESC))			// Task Manager
 		
 				// ----------------------------------------
 
-				&kp LG(LS(TAB))				
+				&kp LA(LS(TAB))				
 				&kp LG(LC(F1)) 					
 				&kp LG(LC(F2)) 					
 				&kp LG(LC(F3))					
@@ -907,19 +901,19 @@
 
 				// ----------------------------------------
 
-				&kp LG(LS(F5))
-				&kp LA(LG(LC(F1))) 					
-				&kp LA(LG(LC(F2))) 					
-				&kp LA(LG(LC(F3))) 					
-				&kp LA(LG(LC(F4))) 					
-				&kp LA(LG(LC(F5))) 	
+				&kp LG(LS(F3))
+				&none						//
+				&none						//
+				&none						//
+				&none						//
+				&none	
 
-				&kp LA(LG(LC(F6))) 					
-				&kp LA(LG(LC(F7))) 					
-				&kp LA(LG(LC(F8))) 					
-				&kp LA(LG(LC(F9))) 					
-				&kp LA(LG(LC(F10))) 	
-				&kp LG(LS(F6))
+				&none						//
+				&none						//
+				&none						//
+				&none						//
+				&none	
+				&kp LG(LS(F4))
 		
 				// ----------------------------------------
 
@@ -927,7 +921,7 @@
 				&none						//
 				&none
 				&trans						// 
-				&mdResWin
+				&to wCHAR
 				&none						// 
 
 				// ----------------------------------------
@@ -1005,7 +999,7 @@
 				&sl wGUI					//
 				&sl wSFUNC					// deep
 				&none
-				&mdResWin
+				&to wCHAR
 				&none						//
 
 				// ----------------------------------------
@@ -1049,7 +1043,7 @@
 				&kp LC(LS(C))			
 				&kp LC(LS(X))
 
-				&kp LC(LS(LA(H)))	
+				&kp LG(V)
 				&kp LC(LS(V))
 				&kp LC(LS(LA(I)))	
 				&kp LC(LS(LA(U)))	
@@ -1078,7 +1072,7 @@
 				&wModSCtlReset
 				&trans						// 
 				&none
-				&mdResWin
+				&to wCHAR
 				&none						//
 
 				// ----------------------------------------       
@@ -1152,7 +1146,7 @@
 				&trans
 				&none						// 
 				&none						//
-				&mdResWin
+				&to wCHAR
 				&none						// 
 
 				// ----------------------------------------
@@ -1223,7 +1217,7 @@
 				&kp LC(SPC)
 				&none						// 
 				&none						//
-				&mdResWin
+				&to wCHAR
 				&none						// 
 
 				// ----------------------------------------
@@ -1299,7 +1293,7 @@
 				&none
 				&none					// 
 				&none					//
-				&mdResWin
+				&to wCHAR
 				&none					//
 
 				// ----------------------------------------
@@ -1358,7 +1352,7 @@
 				&kp LS(N4) 				// $
 				&trans					//
 
-				&kp RA(LC(RBRC))			// ~
+				&kp RA(LC(RBRC))		// ~
 				&trans
 				&kp RA(N7)				// Geschweift
 				&kp RA(N0)				// Geschweift
@@ -1371,7 +1365,7 @@
 				&none
 				&none					// 
 				&none					//
-				&mdResWin
+				&to wCHAR
 				&none					//
 
 				// ----------------------------------------
@@ -1393,12 +1387,12 @@
 
 				// ----------------------------------------
 
-				&wReset
 				&none
 				&none
 				&none
-				&kp LC(F1)
-				&kp LC(LA(DELETE))
+				&none
+				&none
+				&none
 
 				&kp LC(LA(ENTER))	
 				&kp LG(LS(LEFT))
@@ -1412,9 +1406,9 @@
 				&none
 				&none
 				&none
-				&kp LC(LA(LG(U)))
-				&kp LG(LS(S))
-				&kp LG(A)
+				&none
+				&kp LC(LA(LG(C)))
+				&none
 
 				&kp LC(LA(LG(ENTER)))	
 				&wWinLeft
@@ -1428,25 +1422,25 @@
 				&none
 				&none
 				&none
-				&kp LG(O)
-				&kp LG(E)
-				&kp LG(L)
-
-				&kp LG(D)
-				&kp LG(HOME)
-				&kp LG(LS(HOME))			
-				&kp LG(LS(END))			
-				&kp LG(END)
 				&none
+				&none
+				&none
+
+				&kp LC(LA(LG(F1)))
+				&kp LC(LA(LG(F2)))
+				&kp LC(LA(LG(F3)))	
+				&kp LC(LA(LG(F4)))
+				&kp LC(LA(LG(F5)))
+				&kp LC(LA(LG(F6)))
 
 				// ----------------------------------------
 		
-				&none
+				&wSymReset
 				&kp LG(S)
-				&wAlterShift				// 
-				&wPNAVShift					//
-				&mdResWin	
-				&wNrShift
+				&wAlterReset				// 
+				&wPNavReset					//
+				&to wCHAR	
+				&wNrReset
 
 				// ----------------------------------------
 			>;
@@ -1466,18 +1460,18 @@
 
 				// ----------------------------------------
 
-				&wReset
 				&none
-				&none
-				&none
-				&kp LC(F1)
+				&sys_reset
+				&kp LC(LA(LG(A)))
 				&kp LC(LA(DELETE))
+				&kp LC(LA(LG(B)))
+				&kp LG(L)
 
-				&kp LC(LA(ENTER))	
-				&kp LG(LS(LEFT))
-				&wWinUp
-				&kp LG(LS(RIGHT))
-				&kp LG(PG_UP)				
+				&kp LC(F1)
+				&kp LC(LA(LG(M)))
+				&kp LC(LA(LG(W)))
+				&none
+				&none			
 				&kp BACKSPACE			
 
 				// ----------------------------------------
@@ -1485,15 +1479,15 @@
 				&none
 				&none
 				&none
-				&kp LC(LA(LG(U)))
-				&kp LG(LS(S))
-				&kp LG(A)
+				&none
+				&none
+				&none
 
-				&kp LC(LA(LG(ENTER)))	
-				&wWinLeft
-				&wWinDown
-				&wWinRight
-				&kp LG(PG_DN)			
+				&kp LG(A)	
+				&kp LC(LS(S))
+				&kp LC(LA(LG(S)))
+				&none
+				&none
 				&kp LC(ENTER)				// 
 
 				// ----------------------------------------
@@ -1501,33 +1495,31 @@
 				&none
 				&none
 				&none
-				&kp LG(O)
-				&kp LG(E)
-				&kp LG(L)
+				&none
+				&none
+				&none
 
-				&kp LG(D)
-				&kp LG(HOME)
-				&kp LG(LS(HOME))			
-				&kp LG(LS(END))			
-				&kp LG(END)
+				&kp LC(LA(LG(J)))
+				&kp LC(LA(LG(U)))
+				&kp LC(LA(LG(K)))			
+				&none	
+				&none
 				&none
 
 				// ----------------------------------------
 		
-				&none
-				&kp LG(S)
-				&wAlterShift				// 
-				&wPNAVShift					//
-				&mdResWin	
-				&wNrShift
+				&wSymReset
+				&kp LG(LA(S))
+				&wAlterReset				// 
+				&wPNavReset					//
+				&to wCHAR	
+				&wNrReset
 
 				// ----------------------------------------
 			>;
 		};
 
 
-
-		
 	};
 };
 
