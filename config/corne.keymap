@@ -323,6 +323,79 @@
 
 
 
+		// -----------------------------------------------------|
+		// Layer 0 - mChar = 	  Buchstaben					|
+		// -----------------------------------------------------|
+	
+		win_buchstaben
+		{
+			label = "win";
+
+			bindings = <
+
+				// ----------------------------------------
+
+				&kp ESC
+				&kp J 
+				&kp D	 
+				&kp U
+				&kp A
+				&kp X
+
+				&kp P
+				&kp H
+				&kp L
+				&kp M
+				&kp W
+				&kp BSPC
+
+				// ----------------------------------------
+	
+				&sl wSShift
+				&kp C
+				&kp T
+				&kp I
+				&kp E
+				&kp O
+
+				&kp B
+				&kp N
+				&kp R
+				&kp S
+				&kp G
+				&kp RET
+
+				// ----------------------------------------
+	
+				&wMdLs
+				&kp F
+				&kp V
+				&kp MINUS
+				&kp Y
+				&kp Q
+
+				&kp Z
+				&kp SEMI
+				&kp LBKT
+				&kp SQT
+				&kp K
+				&wMdRs
+
+				// ----------------------------------------
+
+				&sl wSYM
+				&kp SPACE
+				&sl wFUNC
+				&sl wPRG 
+				&sl mNAV
+				&wMdNr
+
+				// ----------------------------------------
+			>;
+		};
+
+
+
 	};
 };
 
