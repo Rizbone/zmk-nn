@@ -31,7 +31,7 @@
 #define wSSYM 13
 
 #define wSShift 14
-#define wSSShift 16
+#define wSSShift 15
 
 
 
@@ -656,7 +656,7 @@
 				&kp LS(TAB)
 				&kp UP						// @Up
 				&kp TAB
-				&kp LC(LA(LS(C)))	
+				&kp DEL
 
 				&kp LC(LA(C))	
 				&kp LC(LA(L))			
@@ -688,7 +688,7 @@
 				&kp LC(LEFT)				// @Wort Sprung
 				&kp LC(RIGHT)				// @Wort Sprung
 				&kp END
-				&kp DEL
+				&kp LC(LA(LS(C)))	
 
 				&wAltShot
 				&kp LS(HOME)					// @Home 
@@ -722,7 +722,7 @@
 
 			bindings = <
 
-					// ----------------------------------------
+				// ----------------------------------------
 
 				&kp ESC
 				&kp PG_UP					//
@@ -1377,13 +1377,6 @@
 				// ----------------------------------------
 			>;
 		};	
-
-
-
-
-
-
-
 
 
 
