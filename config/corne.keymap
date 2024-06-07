@@ -395,6 +395,77 @@
 		};
 
 
+
+		// -----------------------------------------------------|
+		// Layer 1 - mNR = 	  Zahlen 							|
+		// -----------------------------------------------------|
+
+		win_zahlen
+		{
+			label = "win";
+
+			bindings = <
+
+				// ----------------------------------------
+
+				&kp ESC	
+				&kp RBKT  				// +
+				&kp NUBS				// Spitze
+				&kp LS(NUBS)			// Spitze
+				&kp RA(N2)				// hoch 2
+				&kp X
+				
+				&kp LS(NUHS)			// '
+				&kp LS(DOT)				// :
+				&kp LS(COMMA)			// ;
+				&kp M
+				&kp LS(RBKT)			// *				
+				&kp BACKSPACE
+
+				// ----------------------------------------
+
+				&sl wSShift
+				&kp N1				
+				&kp N2				
+				&kp N3				
+				&kp N4					
+				&kp N5		
+
+				&kp N6				
+				&kp N7				
+				&kp N8			
+				&kp N9				
+				&kp N0				
+				&wEnterReset 
+
+				// ----------------------------------------
+
+				&wShiftReset
+				&kp LS(N7)				// /
+				&kp LC(LA(MINUS))		// backlslash
+				&kp LS(N5)				// %
+				&kp LA(LC(E))			// €
+				&kp GRAVE				// ^
+
+				&kp LS(N0)				// =
+				&kp DOT					// .
+				&kp COMMA				// ,
+				&kp LS(SLASH)			// _
+				&kp SLASH 				// -
+				&wShiftReset
+
+				// ----------------------------------------
+		
+				&wSymReset
+				&wSpaceReset 
+				&wFuncReset
+				&wPrgReset
+				&wNavReset
+				&none
+			>;		
+		};
+
+
 	};
 };
 
