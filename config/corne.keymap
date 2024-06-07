@@ -135,7 +135,18 @@
     	};
 
 				
-
+		wNavReset: wNavReset 
+		{
+            label = "wNavReset";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&to wCHAR>
+                , <&macro_press &sl wNAV>
+    			, <&macro_pause_for_release>
+				, <&macro_release &sl wNAV>
+                ;
+    	};
 
 		wPrgReset: wPrgReset 
 		{
@@ -177,18 +188,6 @@
     	};
 
 
-		wPNavReset: wPNavReset 
-		{
-            label = "wPNavReset";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&to wCHAR>
-                , <&macro_press &sl wPNAV>
-    			, <&macro_pause_for_release>
-				, <&macro_release &sl wPNAV>
-                ;
-    	};
 
 
 
