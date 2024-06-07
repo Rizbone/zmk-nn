@@ -80,9 +80,42 @@
     };
 
 	
-	 macros 
-	 {
+	macros 
+	{
 
+		//Reset Keys
+        wSpaceReset: wSpaceReset 
+		{
+            label = "wSpaceReset";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&to wCHAR>
+                , <&kp SPACE>
+                ;
+    	};
+		wEnterReset: wEnterReset 
+		{
+            label = "wEnterReset";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&to wCHAR>
+                , <&kp ENTER>
+                ;
+    	};
+		wShiftReset: wShiftReset
+		{
+            label = "wShiftReset";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&to wCHAR>
+                , <&macro_press &sl wLCHAR>
+    			, <&macro_pause_for_release>
+				, <&macro_release &sl wLCHAR>
+                ;
+    	};
 
 
 	};
@@ -94,6 +127,7 @@
 	keymap
 	{	
 		compatible = "zmk,keymap";
+
 
 
 	};
