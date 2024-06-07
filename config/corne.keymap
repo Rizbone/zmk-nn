@@ -121,6 +121,85 @@
 
 		//Reset Daumen
 
+		wNrReset: wNrReset
+		{
+            label = "wNrReset";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&to wCHAR>
+                , <&macro_press &sl wNR>
+    			, <&macro_pause_for_release>
+				, <&macro_release &sl wNR>
+				;
+    	};
+
+				
+		wNavReset: wNavReset 
+		{
+            label = "wNavReset";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&to wCHAR>
+                , <&macro_press &sl wNAV>
+    			, <&macro_pause_for_release>
+				, <&macro_release &sl wNAV>
+                ;
+    	};
+
+		wPrgReset: wPrgReset 
+		{
+            label = "wPrgReset";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&to wCHAR>
+                , <&macro_press &sl wPRG>
+    			, <&macro_pause_for_release>
+				, <&macro_release &sl wPRG>
+                ;
+    	};
+
+		wFuncReset: wFuncReset
+		{
+            label = "wFuncReset";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&to wCHAR>
+                , <&macro_press &sl wFUNC>
+    			, <&macro_pause_for_release>
+				, <&macro_release &sl wFUNC>
+                ;
+    	};
+
+		wSymReset: wSymReset
+		{
+            label = "wSymReset";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&to wCHAR>
+                , <&macro_press &sl wSYM>
+    			, <&macro_pause_for_release>
+				, <&macro_release &sl wSYM>
+                ;
+    	};
+
+
+		wPNavReset: wPNavReset 
+		{
+            label = "wPNavReset";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&to wCHAR>
+                , <&macro_press &sl wPNAV>
+    			, <&macro_pause_for_release>
+				, <&macro_release &sl wPNAV>
+                ;
+    	};
 
 
 
